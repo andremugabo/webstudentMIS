@@ -1,0 +1,154 @@
+@charset "ISO-8859-1";
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Section */
+.profile-section {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-card {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-card h2 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.profile-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.edit-profile-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.edit-profile-btn:hover {
+    background-color: #218838;
+}
+
+/* Details Section */
+.details-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.details-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details-card h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.details-card p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.details-card ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Chart Section */
+.chart-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-section h3 {
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}

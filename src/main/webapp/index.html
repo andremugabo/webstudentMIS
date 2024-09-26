@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Student Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/studentPortalFlavicon.png">
+</head>
+<body>
+  <main>
+      <div class="login-section">
+      	<div class="left-login-section">
+          <div class="left-login-section-bottom">
+            <h1>Welcome to My Student Portal </h1>
+            <h3>For Web Technology Assignment</h3>
+          </div>
+        </div>
+      	<div class="right-login-section">
+          <div class="top-right-login-section">
+            <div>
+              <h1>MSP</h1>
+            </div>
+            <div>
+            <h6>Web</h6>
+            <h6>Technology</h6>
+            <h6>Assignment</h6>
+            </div>
+          </div>
+          <h3>Login</h3>
+          <form action="login" method="post">
+            <div class="input-section">
+              <label for="studentId">Student ID:</label>
+              <input type="text" id="studentId"   name="studentId" placeholder="Enter your student ID">
+            </div>
+
+            <div class="input-section">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter your Password">
+            </div>
+            
+            <div class="input-section">
+              <label for="staff" id="checkbox-label-input">
+                  <input type="checkbox" id="staff" class="checkbox-input">
+                  Are you a staff member?
+              </label>
+          </div>
+          
+			
+            <button type="submit">Login</button>
+
+          </form>
+          <div class="register-forgot">
+	          <a href="forgotPassword.html">Forgot Password ?</a>
+	          <a href="signUp.html">Register now</a>
+          </div>
+          
+        </div>
+      </div>
+  </main>
+</body>
+</html>

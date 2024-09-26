@@ -1,0 +1,201 @@
+@charset "ISO-8859-1";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-image: url("../images/linkedin-sales-solutions-jJFrkJP_-RA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000bf;
+}
+.login-section,
+.forgotPassword {
+  width: 60%;
+  height: 80%;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 2px 4px 2px gray;
+}
+.signup-section {
+  width: 60%;
+  height: 90%;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 2px 4px 2px gray;
+}
+
+.left-login-section {
+  width: 60%;
+  height: 100%;
+  background-image: url("../images/student.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px 0px 0px 20px;
+  position: relative;
+}
+.left-signup-section {
+  width: 50%;
+  height: 100%;
+  background-image: url("../images/student.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px 0px 0px 20px;
+  position: relative;
+}
+.right-login-section {
+  background-color: rgba(255, 255, 255, 0.511);
+  width: 40%;
+  height: 100%;
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+.right-signup-section {
+  background-color: rgba(255, 255, 255, 0.511);
+  width: 50%;
+  height: 100%;
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+.left-login-section-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(180deg, #ffffff9c, #000000);
+  border-radius: 0px 0px 0px 20px;
+}
+.top-right-login-section {
+  border-top: 3px solid black;
+  width: 50%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.top-right-login-section h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-right: 5px;
+}
+.right-login-section > h3 {
+  text-align: center;
+  width: 100%;
+}
+.right-signup-section > h5 {
+  text-align: center;
+  width: 100%;
+}
+
+.right-signup-section > h3 {
+  text-align: center;
+  width: 100%;
+}
+.right-login-section > form {
+  width: 90%;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.right-signup-section > form {
+  width: 90%;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.input-section {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+.input-section label {
+  font-weight: bold;
+  font-size: 20px;
+}
+.input-section input {
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  outline: none;
+}
+#checkbox-label-input {
+  display: flex;
+  align-items: center;
+  font-size: 8px;
+  color: black;
+  cursor: pointer;
+}
+.checkbox-input {
+  margin-right: 10px;
+  accent-color: black;
+}
+
+#checkbox-label-input:hover {
+  color: #223b7d;
+}
+.register-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.register-forgot > a {
+  margin: 3px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 11px;
+}
+.register-forgot > a:hover {
+  text-decoration: underline;
+}
+.right-login-section > form > button {
+  width: 100%;
+  padding: 5px;
+  background-color: #000000;
+  color: white;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.right-signup-section > form > button {
+  width: 100%;
+  padding: 5px;
+  background-color: #000000;
+  color: white;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+}

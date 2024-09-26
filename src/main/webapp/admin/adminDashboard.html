@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="icon" href="assets/images/studentPortalFlavicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Admin Dashboard - Student Management System</h1>
+        </header>
+
+        <div class="main-content-container">
+            <!-- Sidebar Section -->
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard Overview</a></li>
+                    <li><a href="#"><i class="fas fa-user-graduate"></i> Student Management</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i> Course Management</a></li>
+                    <li><a href="#"><i class="fas fa-chart-bar"></i> Grade Overview</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-check"></i> Attendance Tracking</a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+                    <li><a href="./"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content Section -->
+            <main class="main-content">
+                <!-- Dashboard Overview -->
+                <section class="section dashboard-overview">
+                    <div class="dashboard-header">
+                        <div class="profile-info">
+                            <img src="assets/images/pfl.jpg" alt="User Profile Picture" class="profile-picture">
+                            <div class="profile-details">
+                                <h2>Welcome, John Doe</h2>
+                                <p>Here's an overview of your dashboard. Manage students, courses, grades, attendance, and view important notifications right here.</p>
+                                <a href="#manage-students" class="btn btn-small">Manage Students</a>
+                                <a href="#manage-courses" class="btn btn-small">Manage Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+
+
+                <!-- Student Management -->
+                <section class="section student-management">
+                    <h2>Student Management</h2>
+
+                    <!-- Actions -->
+                    <div class="button-group">
+                        <a href="#" class="btn">View All Students</a>
+                        <a href="#" class="btn">Add New Student</a>
+                        <a href="#" class="btn">Manage Student Records</a>
+                        <a href="#" class="btn">Export Student Data</a>
+                    </div>
+
+                    <!-- Search and Filters -->
+                    <div class="search-filters">
+                        <input type="text" placeholder="Search students..." class="search-box">
+                        <select class="filter-box">
+                            <option value="">Select Course</option>
+                            <option value="course1">Course 1</option>
+                            <option value="course2">Course 2</option>
+                        </select>
+                        <select class="filter-box">
+                            <option value="">Select Status</option>
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                        </select>
+                    </div>
+
+                    <!-- Student List Table -->
+                    <div class="student-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Course</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>John Doe</td>
+                                    <td>john.doe@example.com</td>
+                                    <td>Course 1</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <a href="#" class="btn btn-small">Edit</a>
+                                        <a href="#" class="btn btn-small btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <!-- More rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Course Management -->
+                <section class="section course-management">
+                    <h2>Course Management</h2>
+
+                    <!-- Actions -->
+                    <div class="button-group">
+                        <a href="#" class="btn">View All Courses</a>
+                        <a href="#" class="btn">Add New Course</a>
+                        <a href="#" class="btn">Manage Course Details</a>
+                        <a href="#" class="btn">Export Course Data</a>
+                    </div>
+
+                    <!-- Search and Filters -->
+                    <div class="search-filters">
+                        <input type="text" placeholder="Search courses..." class="search-box">
+                        <select class="filter-box">
+                            <option value="">Select Category</option>
+                            <option value="category1">Category 1</option>
+                            <option value="category2">Category 2</option>
+                        </select>
+                        <select class="filter-box">
+                            <option value="">Select Status</option>
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                        </select>
+                    </div>
+
+                    <!-- Course List Table -->
+                    <div class="course-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Course Name</th>
+                                    <th>Description</th>
+                                    <th>Instructor</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>101</td>
+                                    <td>Introduction to Programming</td>
+                                    <td>Learn the basics of programming using JavaScript.</td>
+                                    <td>Jane Smith</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <a href="#" class="btn btn-small">Edit</a>
+                                        <a href="#" class="btn btn-small btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <!-- More rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Grade Overview and Attendance Tracking -->
+                <section class="section grade-attendance-container">
+                    <!-- Grade Overview -->
+                    <div class="grade-overview">
+                        <h2>Grade Overview</h2>
+                        <div class="metrics">
+                            <div class="metric">
+                                <h3>Total Grades</h3>
+                                <p>1,234</p>
+                            </div>
+                            <div class="metric">
+                                <h3>Average Grade</h3>
+                                <p>85%</p>
+                            </div>
+                        </div>
+                        <!-- Line Chart for Grade Trends -->
+                        <div class="chart-container">
+                            <canvas id="gradeChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Attendance Tracking -->
+                    <div class="attendance-tracking">
+                        <h2>Attendance Tracking</h2>
+                        <p>Track student attendance and view attendance reports.</p>
+                        <div class="button-group">
+                            <a href="#" class="btn">View Attendance</a>
+                            <a href="#" class="btn">Generate Report</a>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="attendanceChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Notifications -->
+                <section class="section notifications">
+                    <h2>Notifications</h2>
+                    <p><strong>System Alert:</strong> New update available for the student management system.</p>
+                    <p><strong>User Notification:</strong> New student registration pending approval.</p>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Grade Overview - Line Chart
+        var ctx = document.getElementById('gradeChart').getContext('2d');
+        var gradeChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                datasets: [{
+                    label: 'Average Grades',
+                    data: [78, 85, 80, 90, 88, 92],
+                    backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                    borderColor: '#007bff',
+                    borderWidth: 2,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Attendance Tracking - Pie Chart
+        var ctx2 = document.getElementById('attendanceChart').getContext('2d');
+        var attendanceChart = new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: ['Present', 'Absent', 'Late'],
+                datasets: [{
+                    data: [85, 10, 5],
+                    backgroundColor: ['#28a745', '#dc3545', '#ffc107'],
+                    borderColor: '#fff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+    </script>
+</body>
+</html>
